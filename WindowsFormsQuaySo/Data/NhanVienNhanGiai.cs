@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsQuaySo
 {
-    public class NhanVienNhanGiai:IComparable
+    public class NhanVienNhanGiai: IComparable
     {
         int sTT = 0;
         int iD;

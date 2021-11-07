@@ -82,19 +82,20 @@ namespace WindowsFormsQuaySo
             this.txtMatKhau.Location = new System.Drawing.Point(212, 228);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(278, 22);
-            this.txtMatKhau.TabIndex = 29;
+            this.txtMatKhau.TabIndex = 3;
             // 
             // txtTenDangNhap
             // 
             this.txtTenDangNhap.Location = new System.Drawing.Point(212, 175);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(278, 22);
-            this.txtTenDangNhap.TabIndex = 28;
+            this.txtTenDangNhap.TabIndex = 2;
             // 
             // btnExit
             // 
             this.btnExit.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.btnExit.BackColor = System.Drawing.SystemColors.Control;
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(385, 368);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(105, 41);
@@ -108,7 +109,7 @@ namespace WindowsFormsQuaySo
             this.txthoTen.Location = new System.Drawing.Point(212, 121);
             this.txthoTen.Name = "txthoTen";
             this.txthoTen.Size = new System.Drawing.Size(278, 22);
-            this.txthoTen.TabIndex = 33;
+            this.txthoTen.TabIndex = 1;
             // 
             // label3
             // 
@@ -126,7 +127,7 @@ namespace WindowsFormsQuaySo
             this.chkbRemember.Location = new System.Drawing.Point(212, 272);
             this.chkbRemember.Name = "chkbRemember";
             this.chkbRemember.Size = new System.Drawing.Size(56, 21);
-            this.chkbRemember.TabIndex = 34;
+            this.chkbRemember.TabIndex = 4;
             this.chkbRemember.Text = "Nhớ";
             this.chkbRemember.UseVisualStyleBackColor = true;
             // 
@@ -143,6 +144,7 @@ namespace WindowsFormsQuaySo
             // cboPhongBan
             // 
             this.cboPhongBan.FormattingEnabled = true;
+            this.cboPhongBan.ItemHeight = 16;
             this.cboPhongBan.Location = new System.Drawing.Point(212, 317);
             this.cboPhongBan.Name = "cboPhongBan";
             this.cboPhongBan.Size = new System.Drawing.Size(278, 24);
@@ -172,15 +174,17 @@ namespace WindowsFormsQuaySo
             this.btnUpdate.Location = new System.Drawing.Point(236, 368);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(105, 41);
-            this.btnUpdate.TabIndex = 39;
+            this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "Cập nhập";
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click_1);
             // 
             // frm_Register
             // 
+            this.AcceptButton = this.btnUpdate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(535, 434);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtID);
