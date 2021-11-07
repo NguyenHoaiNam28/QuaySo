@@ -189,7 +189,6 @@ namespace WindowsFormsQuaySo
             this.groupBox3.Size = new System.Drawing.Size(1088, 309);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // lblMunber5
             // 
@@ -400,6 +399,7 @@ namespace WindowsFormsQuaySo
             this.Name = "frm_QuaySoMayMan";
             this.Text = "Quay số may mắn";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_QuaySoMayMan_FormClosing);
             this.Load += new System.EventHandler(this.frmQuaySoMayMan_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSQuay)).EndInit();

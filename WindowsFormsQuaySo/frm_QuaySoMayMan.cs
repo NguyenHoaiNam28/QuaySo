@@ -216,9 +216,15 @@ namespace WindowsFormsQuaySo
 
         }
 
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
+        
 
+        private void frm_QuaySoMayMan_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có thật sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != DialogResult.OK)
+            {
+                e.Cancel = true;
+
+            }
         }
     }
 }

@@ -84,7 +84,7 @@ namespace WindowsFormsQuaySo
             this.btnExit});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(965, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(965, 25);
             this.toolStrip1.TabIndex = 16;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -92,7 +92,7 @@ namespace WindowsFormsQuaySo
             // 
             this.btnReload.Image = global::WindowsFormsQuaySo.Properties.Resources.reload;
             this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(87, 28);
+            this.btnReload.Size = new System.Drawing.Size(87, 22);
             this.btnReload.Text = "Làm mới";
             this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
@@ -100,7 +100,7 @@ namespace WindowsFormsQuaySo
             // 
             this.btnAdd.Image = global::WindowsFormsQuaySo.Properties.Resources.adduser;
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(66, 28);
+            this.btnAdd.Size = new System.Drawing.Size(66, 22);
             this.btnAdd.Text = "Thêm";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -108,7 +108,7 @@ namespace WindowsFormsQuaySo
             // 
             this.btnEdit.Image = global::WindowsFormsQuaySo.Properties.Resources.edit;
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(54, 28);
+            this.btnEdit.Size = new System.Drawing.Size(54, 22);
             this.btnEdit.Text = "Sửa";
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
@@ -116,7 +116,7 @@ namespace WindowsFormsQuaySo
             // 
             this.btnDelete.Image = global::WindowsFormsQuaySo.Properties.Resources.delete;
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(55, 28);
+            this.btnDelete.Size = new System.Drawing.Size(55, 22);
             this.btnDelete.Text = "Xóa";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -124,7 +124,7 @@ namespace WindowsFormsQuaySo
             // 
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(67, 28);
+            this.btnExit.Size = new System.Drawing.Size(67, 22);
             this.btnExit.Text = "Thoát";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -151,6 +151,9 @@ namespace WindowsFormsQuaySo
             this.colMatKhau,
             this.colRemember,
             this.colPhongBan});
+            this.dgvUserList.Cursor = System.Windows.Forms.Cursors.Default;
+            this.dgvUserList.EnableHeadersVisualStyles = false;
+            this.dgvUserList.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dgvUserList.Location = new System.Drawing.Point(3, 40);
             this.dgvUserList.Name = "dgvUserList";
             this.dgvUserList.ReadOnly = true;
@@ -244,7 +247,6 @@ namespace WindowsFormsQuaySo
         public System.Windows.Forms.Label lblAccount;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.DataGridView dgvUserList;
         private System.Windows.Forms.ToolStripLabel btnReload;
         private System.Windows.Forms.ToolStripLabel btnExit;
         private System.Windows.Forms.ToolStripLabel btnAdd;
@@ -256,5 +258,6 @@ namespace WindowsFormsQuaySo
         private System.Windows.Forms.DataGridViewTextBoxColumn colMatKhau;
         private System.Windows.Forms.DataGridViewCheckBoxColumn colRemember;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPhongBan;
+        private System.Windows.Forms.DataGridView dgvUserList;
     }
 }
