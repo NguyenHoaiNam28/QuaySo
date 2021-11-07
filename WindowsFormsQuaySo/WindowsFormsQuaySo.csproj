@@ -143,12 +143,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
-      <Project>{953edfd7-ead3-4187-ab5e-1cbb0ed2d30e}</Project>
-      <Name>ClassLibrary</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\adduser.png" />
   </ItemGroup>
   <ItemGroup>

@@ -31,6 +31,7 @@ namespace WindowsFormsQuaySo
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
             // Kiểm tra đăng nhập
+            
             if (!string.IsNullOrEmpty(txbUserName.Text))
             {
                 if (!string.IsNullOrEmpty(txbPassWord.Text))
@@ -59,6 +60,7 @@ namespace WindowsFormsQuaySo
                 MessageBox.Show("Nhập tên đăng nhập", "Thông báo");
             }
         }
+        //Hàm kiểm tra đăng nhập
         private bool Kiemtradangnhap(string tenDangNhap, string matKhau)
         {
             foreach (User item in listUser)
